@@ -4,6 +4,10 @@
 
 Simple short url generated service.
 
+## Online
+
+[zf.ink](https://zf.ink/short-url)
+
 ## API
 
 TODO

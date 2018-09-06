@@ -30,6 +30,7 @@
     "moment": "^2.22.2",
     "mysql": "^2.16.0",
     "nest-boot": "^0.1.1",
+    "nest-validations": "^0.2.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",
     "typeorm": "^0.2.7",

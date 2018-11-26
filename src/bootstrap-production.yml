@@ -2,24 +2,22 @@ web:
   serviceId: null
   serviceName: short-url-service
   port: 4444
-  host: https://zf.ink
+  host: ${ URL }
 consul:
   defaults:
-    token: token
-  host: localhost
-  port: 8500
+    token: ${ CONSUL_TOKEN }
+  host: ${ CONSUL_URL }
+  port: ${ CONSUL_PORT || 8500 }
   health_check:
     timeout: 1s
     interval: 10s
   max_retry: 5
   retry_interval: 5000
-  discoveryHost: localhost
+  discoveryHost: ${ DISCOVERY_HOST }
   config:
     key: config__{serviceName}__{env}
     retry: 5
 dataSource:
-  username: root
-  password: root
-  database: dwz
-  synchronize: true
-
+  username: ${ DB_USER }
+  password: ${ DB_PWD }
+  database: ${ DB_NAME }
